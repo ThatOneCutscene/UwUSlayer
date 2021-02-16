@@ -1,15 +1,58 @@
 #include <iostream>
+#pragma once
   using namespace std;
-  
-  int main() 
+  //this is Game.h
+  Class Game 
+   { 
+   public:
+     Game();
+     virtual ~Game();
+     //Operators go down below:
+     
+     
+     //Then Functions go down here:
+     Void mainMenu(); {
+     
+     };
+    inline bool getPLaying() const { return this->playing};
+     
+     private:
+     //variables are in here
+     int choice;
+     bool playing
+    
+   };
+  //end of Game.h
+
+
+int main() 
   {
+  Game game;
+  while (game.getplaying())
+  {
+  
+  }
   
    return 0;
  }
   
+  //in here just for a tab called "Game.h"
+  //put in #include "Game.h"
+    Game::Game(); 
+  {
+  choice = 0;
   
+  }
+  Game::~Game();
+  {
   
+  }
+  Void Game::mainMenu()
+  {
+   cout << "MAIN MENU"
+  }
   
+  //down here comes the RPG game
   
   
   
